@@ -12,6 +12,8 @@ spring:
 
 app:
   api:
+    # URL del backend que consume esta UI (llamadas server-side: REST y STOMP).
+    # En CapRover apuntar a la red interna: srv-captain--<app-backend>:<puerto>
     base-url: ${API_BASE_URL:http://localhost:8080/api}
 
 vaadin:

@@ -2,7 +2,7 @@ name: Deploy red-social (backend + frontend)
 
 on:
   push:
-    branches: [main]
+    branches: [mainlastest]
     paths:
       - "red-social-api/**"
       - "red-social-ui/**"
