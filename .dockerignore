@@ -1,0 +1,14 @@
+.git
+.github
+.private-red-social
+.githooks
+.env
+.env.*
+!.env.example
+**/target
+**/uploads
+logs
+docs
+**/*.md
+mvnw
+mvnw.cmd

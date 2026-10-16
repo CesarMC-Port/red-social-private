@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+# Regla: cada commit en RED-SOCIAL propaga los cambios al repo privado
+# (producción) vía scripts/sync-private.sh.
+# No aborta el commit si el sync falla (se reintenta en el próximo commit).
+"$(git rev-parse --show-toplevel)/scripts/sync-private.sh" || \
+  echo "[sync-private] El sync con el repo privado falló; reintentá en el próximo commit." >&2
