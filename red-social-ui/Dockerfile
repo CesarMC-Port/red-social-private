@@ -12,6 +12,11 @@ COPY red-social-ui/pom.xml red-social-ui/
 
 COPY red-social-common/src red-social-common/src
 COPY red-social-ui/src red-social-ui/src
+# El frontend de Vaadin vive en la raíz del módulo (no en src/main/frontend).
+COPY red-social-ui/frontend red-social-ui/frontend
+COPY red-social-ui/package.json red-social-ui/package.json
+COPY red-social-ui/vite.config.ts red-social-ui/vite.config.ts
+COPY red-social-ui/tsconfig.json red-social-ui/tsconfig.json
 
 RUN mvn -B -pl red-social-ui -am -Pproduction -DskipTests package
 

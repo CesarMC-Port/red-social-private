@@ -32,6 +32,8 @@ Thumbs.db
 **/pnpm-lock.yaml
 **/vite.generated.ts
 types.d.ts
+# Bundle de producción (artefacto de build; el dev.bundle sí se versiona)
+**/src/main/bundles/prod.bundle
 
 # Logs
 *.log

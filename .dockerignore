@@ -6,6 +6,8 @@
 .env.*
 !.env.example
 **/target
+**/node_modules
+red-social-ui/design
 **/uploads
 logs
 docs

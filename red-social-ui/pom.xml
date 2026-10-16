@@ -69,6 +69,10 @@
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-maven-plugin</artifactId>
                 <version>${vaadin.version}</version>
+                <configuration>
+                    <!-- El frontend vive en la raíz del módulo (no en src/main/frontend). -->
+                    <frontendDirectory>${project.basedir}/frontend</frontendDirectory>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
