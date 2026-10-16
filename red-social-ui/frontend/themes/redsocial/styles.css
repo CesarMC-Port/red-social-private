@@ -1367,7 +1367,7 @@ vaadin-dialog-overlay { width: min(94vw, 560px); }
     .notifications-bell-button vaadin-icon { margin: 0; }
     .notifications-badge { right: -6px; top: 0; transform: none; }
     .app-search { display: none; }
-    .auth-hero { display: none; }
+    vaadin-vertical-layout.auth-hero { display: none; }
     vaadin-vertical-layout.auth-panel { flex: 1 1 100%; padding: 24px; }
 }
 
@@ -1417,7 +1417,7 @@ vaadin-dialog-overlay { width: min(94vw, 560px); }
     vaadin-horizontal-layout.chat-composer { padding: 12px 14px; }
 
     /* --- Auth --- */
-    .auth-hero { display: none; }
+    vaadin-vertical-layout.auth-hero { display: none; }
     vaadin-vertical-layout.auth-panel { flex: 1 1 100%; padding: 24px 16px; }
     .auth-card { padding: 24px !important; }
 
@@ -1449,7 +1449,7 @@ vaadin-dialog-overlay { width: min(94vw, 560px); }
     .explore-user-row > vaadin-button { flex: 1 1 auto; }
 
     /* --- Proyectos --- */
-    .project-meta { flex-wrap: wrap; }
+    span.project-meta, vaadin-horizontal-layout.project-meta { flex-wrap: wrap; }
     .project-donate { margin-left: 0; width: 100%; }
     .projects-tabs::part(tabs), .profile-tabs::part(tabs) { overflow-x: auto; }
     .projects-create { width: 100%; margin-left: 0; }
@@ -1460,9 +1460,9 @@ vaadin-dialog-overlay { width: min(94vw, 560px); }
     .profile-avatar { bottom: -42px; }
     .profile-name { font-size: 1.3rem; }
     .profile-handle { font-size: 0.8rem; }
-    .profile-stats { width: 100%; }
+    vaadin-horizontal-layout.profile-stats { width: 100%; }
     .stat-pill { flex: 1 1 0; padding: 10px 8px; text-align: center; }
-    .profile-actions { width: 100%; flex-wrap: wrap; }
+    vaadin-horizontal-layout.profile-actions { width: 100%; flex-wrap: wrap; }
     .profile-actions vaadin-button { flex: 1 1 auto; }
     .profile-logout { display: inline-flex; }
 }
